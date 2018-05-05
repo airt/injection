@@ -1,0 +1,17 @@
+buildscript {
+  repositories { mavenCentral() }
+  dependencies {
+    classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.2.31'
+  }
+}
+
+apply plugin: 'kotlin'
+
+repositories { mavenCentral() }
+
+dependencies {
+  compile 'javax.inject:javax.inject:1'
+  compile 'org.jetbrains.kotlin:kotlin-stdlib'
+  testCompile 'javax.inject:javax.inject-tck:1'
+  testCompile 'junit:junit:4.12'
+}
